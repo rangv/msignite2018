@@ -7,12 +7,14 @@ Get started quickly building your IoT solutions with the IoT solution accelerato
 ## In this lab you will
 
 * How to deploy the Azure IoT Remote Monitoring solution accelerator
+  * Option 1: [Create Remote Monitoring Solution using website](#create-remote-monitoring-solution-using-website)
+  * Option 2: [Create Remote Monitoring Solution using CLI](#Create-Remote-Monitoring-Solution-using-CLI)
 * Use the solution Dashboard page to visualize simulated and real devices on a map, and the 
 * Wear an operator hat and perform tasks from Web UI
 * Learn to use an external Simulator to connect to Accelerator and send Data
 * Learn to extend the solution to Time Series Insights and Data Lake Store
 
-## Create Remote Monitoring Solution
+## Create Remote Monitoring Solution using website
 
 Go To [Azure IoT Solutions Website](http://azureiotsolutions.com/). You will be creating and working with Remote Monitoring solution accelerator in this workshop.
 
@@ -172,3 +174,28 @@ Status will change to Acknowledged
 Change status of the alert to closed by clicking on **Close**. Status will change to Closed
 
 ![Acknowledged](images/24closed.png)
+
+## Create Remote Monitoring Solution using CLI
+
+### Prerequisites
+* [nodejs](https://nodejs.org/) used as the runtime for the CLI.  Please install node before attempting a deployment.
+* [kubectl](https://kubernetes.io/docs/tasks/tools/#install-kubectl-binary-using-curl) **select the tab specific to your OS**
+* [Azure Subscription](https://azure.microsoft.com/free/) (also see [permissions guidelines](https://docs.microsoft.com/azure/iot-suite/iot-suite-permissions)). **Can be skipped if redeemed demo code**
+
+### Install and run the CLI
+1. `npm install -g iot-solutions`
+1. `pcs login`
+![login-image](images/pcslogin.png)
+1. `pcs -t remotemonitoring -s standard -r dotnet`
+![standard-deployment](images/standard-ongoing.png)
+1. Successfull deployment
+![done](images/standard-done.png)
+
+### Kubectl setup
+#### Rename config-*{solutionname}*-cluster to config where *solutionname* is your solution name from step 1 of standard deployment
+1. `cd .kube`
+1. `move config-{solutionname}-cluster config`
+
+### Kubectl Dashboard
+1. `kubectl proxy` This should start service dashboard on localhost
+1. Click this url: http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/
