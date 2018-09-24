@@ -7,12 +7,14 @@ Get started quickly building your IoT solutions with the IoT solution accelerato
 ## In this lab you will
 
 * How to deploy the Azure IoT Remote Monitoring solution accelerator
+  * Option 1: [Create Remote Monitoring Solution using website](#create-remote-monitoring-solution-using-website)
+  * Option 2: [Create Remote Monitoring Solution using CLI](#Create-Remote-Monitoring-Solution-using-CLI)
 * Use the solution Dashboard page to visualize simulated and real devices on a map, and the 
 * Wear an operator hat and perform tasks from Web UI
 * Learn to use an external Simulator to connect to Accelerator and send Data
 * Learn to extend the solution to Time Series Insights and Data Lake Store
 
-## Create Remote Monitoring Solution
+## Create Remote Monitoring Solution using website
 
 Go To [Azure IoT Solutions Website](http://azureiotsolutions.com/). You will be creating and working with Remote Monitoring solution accelerator in this workshop.
 
@@ -74,6 +76,8 @@ You will be asked to provide permissions to read profile. Click **Accept** butto
 You will land on Remote Monitoring dashboard.
 
 ![Launch](images/06dashboard.png)
+
+## Create Remote Monitoring Solution using CLI
 
 Filter to view **Chillers**
 
