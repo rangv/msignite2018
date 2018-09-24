@@ -8,7 +8,7 @@ Get started quickly building your IoT solutions with the IoT solution accelerato
 
 * How to deploy the Azure IoT Remote Monitoring solution accelerator
   * Option 1: [Create Remote Monitoring Solution using website](#create-remote-monitoring-solution-using-website)
-  * Option 2: [Create Remote Monitoring Solution using CLI](#Create-Remote-Monitoring-Solution-using-CLI)
+  * Option 2: [Create Remote Monitoring Solution using CLI](#create-remote-monitoring-solution-using-cli)
 * Use the solution Dashboard page to visualize simulated and real devices on a map, and the 
 * Wear an operator hat and perform tasks from Web UI
 * Learn to use an external Simulator to connect to Accelerator and send Data
