@@ -79,6 +79,15 @@ You will land on Remote Monitoring dashboard.
 
 ## Create Remote Monitoring Solution using CLI
 
+### Prerequisites
+* [nodejs](https://nodejs.org/) used as the runtime for the CLI.  Please install node before attempting a deployment.
+* [Azure Subscription](https://azure.microsoft.com/free/) (also see [permissions guidelines](https://docs.microsoft.com/azure/iot-suite/iot-suite-permissions)). **Can be skipped if redeemed demo code**
+
+### Install and run the CLI
+1. `npm install -g iot-solutions`
+1. `pcs login`
+1. `pcs -t remotemonitoring -s standard -r dotnet`
+
 Filter to view **Chillers**
 
 ![Launch](images/chillers.png)
