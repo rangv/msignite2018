@@ -177,9 +177,11 @@ Change status of the alert to closed by clicking on **Close**. Status will chang
 ## Create Remote Monitoring Solution using CLI
 
 ### Prerequisites
-* [nodejs](https://nodejs.org/) used as the runtime for the CLI.  Please install node before attempting a deployment.
-* [kubectl](https://kubernetes.io/docs/tasks/tools/#install-kubectl-binary-using-curl) **select the tab specific to your OS**
-* [Azure Subscription](https://azure.microsoft.com/free/) (also see [permissions guidelines](https://docs.microsoft.com/azure/iot-suite/iot-suite-permissions)). **Can be skipped if redeemed demo code**
+1. [Git bash](https://git-scm.com/downloads)
+1. [Generate ssh keys](https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-windows)
+1. [nodejs](https://nodejs.org/) used as the runtime for the CLI.  Please install node before attempting a deployment.
+1. [kubectl](https://kubernetes.io/docs/tasks/tools/#install-kubectl-binary-using-curl) **select the tab specific to your OS**
+1. [Azure Subscription](https://azure.microsoft.com/free/) (also see [permissions guidelines](https://docs.microsoft.com/azure/iot-suite/iot-suite-permissions)). **Can be skipped if redeemed demo code**
 
 ### Install and run the CLI
 1. `npm install -g iot-solutions`
