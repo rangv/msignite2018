@@ -180,11 +180,12 @@ Change status of the alert to closed by clicking on **Close**. Status will chang
 1. Install [nodejs](https://nodejs.org/en/downloads) **LTS Windows Installer** used as the runtime for the CLI. Choose default options.
 1. Install [Git bash](https://git-scm.com/downloads)
 1. Generate [ssh keys](https://help.github.com/enterprise/2.14/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-windows). Choose default options.
-1. Download [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery).(If you see message that kubectl was download in your directory of choice then you ignore error above)<br>
+1. Download [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery).(If you see message that kubectl was downloaded in your directory of choice then you can ignore error message)<br>
 If you see error that **kubectl.ps1 is not digitally signed** then please run following commands from powershell window.
+    1. Open powershell in admin window
     1. `Set-ExecutionPolicy`
-    2. Type in "Unrestricted"
-    3. Once kubectl is installed revert it back to "Restricted"
+    1. Type in "Unrestricted"
+    1. Once kubectl is installed revert it back to "Restricted"
 
 1. [Azure Subscription](https://azure.microsoft.com/free/) (also see [permissions guidelines](https://docs.microsoft.com/azure/iot-suite/iot-suite-permissions)). **Can be skipped if redeemed demo code**
 
@@ -204,15 +205,15 @@ If you see error that **kubectl.ps1 is not digitally signed** then please run fo
 
 ### Kubectl short overview
 1. `kubectl -h`
-1. `kubectl get`
+1. `kubectl get`<br>
 ![kubectl-get-help](images/kubectl-get-help.png)
-1. `kubectl get pods`
-![kubectl-get-pods](images/kubectl-get-pods.png)
+1. `kubectl get pods`<br>
+![kubectl-pods](images/kubectl-pods.png)
 
 ### Scale up solution
-1. `kubectl get replacasets`
+1. `kubectl get replacasets`<br>
 ![kubectl-get-replicasets](images/kubectl-get-replicasets.png)
-1. `kubectl scale --replicas=5 deployment/auth`
+1. `kubectl scale --replicas=5 deployment/auth`<br>
 ![kubectl-scaleup-auth](images/kubectl-scaleup-auth.png)
 
 ### Kubectl Dashboard
